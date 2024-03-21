@@ -1,16 +1,14 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
-
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 namespace FJMAJACRHYCM.Models
 {
     public class Login
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public string Idlogin { get; set; }
-        [Required]
-        public string Correo { get; set; }
 
-        [Required]
-        public string Password { get; set; }
+        public string Nombre { get; set; }
+        public string Correo { get; set; }
+        public string Clave { get; set; }
+
+        public string[] Roles { get; set; }
     }
 }
