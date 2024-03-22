@@ -7,7 +7,7 @@ namespace FJMAJACRHYCM.Models
     {
         public Employee()
         {
-            Addresses = new HashSet<Address>();
+            Addresses = new List<Address>();
         }
 
         public int Id { get; set; }
@@ -16,6 +16,6 @@ namespace FJMAJACRHYCM.Models
         public string? Email { get; set; }
         public string Phone { get; set; } = null!;
 
-        public virtual ICollection<Address> Addresses { get; set; }
+        public virtual IList<Address> Addresses { get; set; }
     }
 }
